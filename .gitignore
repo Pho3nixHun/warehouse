@@ -62,4 +62,3 @@ typings/
 
 # secured files
 .private/
-datasources.json
