@@ -9,6 +9,8 @@
         "DB_SCHEMA": "@db-schema",
         "DB_CA": "@db-ca",
         "DB_CERT": "@db-cert",
-        "DB_KEY": "@db-key"
+        "DB_KEY": "@db-key",
+        "CLOUD_BUCKET": "@cloud-bucket",
+        "CLOUD_PROJECT": "@cloud-project"
     }
 }
