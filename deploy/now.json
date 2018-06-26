@@ -10,7 +10,7 @@
         "DB_CA": "@db-ca",
         "DB_CERT": "@db-cert",
         "DB_KEY": "@db-key",
-        "CLOUD_BUCKET": "@cloud-bucket",
-        "CLOUD_PROJECT": "@cloud-project"
+        "STORAGE_JSON": "@storage_json",
+        "STORAGE_PROJECT_ID": "@storage_project_id"
     }
 }
