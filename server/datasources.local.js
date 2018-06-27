@@ -11,9 +11,9 @@ const {
   DB_CERT,
   DB_KEY,
   STORAGE_JSON,
-  STORAGE_PROJECT_ID
+  STORAGE_PROJECT_ID,
 } = process.env;
-const keyFilePath = "keyfile.json";
+const keyFilePath = 'keyfile.json';
 
 fs.writeFileSync(keyFilePath, new Buffer(STORAGE_JSON, 'base64').toString());
 
@@ -24,16 +24,16 @@ module.exports = {
     database: DB_SCHEMA,
     user: DB_USER,
     password: DB_PWD,
-    ssl  : {
-      ca : new Buffer(DB_CA, 'base64').toString(),
+    ssl: {
+      ca: new Buffer(DB_CA, 'base64').toString(),
       cert: new Buffer(DB_CERT, 'base64').toString(),
-      key: new Buffer(DB_KEY, 'base64').toString()
+      key: new Buffer(DB_KEY, 'base64').toString(),
     },
-    name: "mysql",
-    connector: "mysql"
+    name: 'mysql',
+    connector: 'mysql',
   },
   GoogleCloudImageStorage: {
     keyFilename: keyFilePath,
     projectId: STORAGE_PROJECT_ID,
-  }
+  },
 };

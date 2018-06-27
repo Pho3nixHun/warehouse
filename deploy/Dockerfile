@@ -8,6 +8,7 @@ RUN apk update && apk upgrade && apk add git bash
 # Pull repo
 WORKDIR /srv/warehouse
 RUN git clone https://github.com/Pho3nixHun/warehouse.git .
+RUN git pull
 RUN npm install -y
 
 # Remove git
